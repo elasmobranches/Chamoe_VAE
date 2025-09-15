@@ -1,4 +1,4 @@
-# Byte-Scale SwinUNet-VAE
+# SwinUNet-VAE
 
 Swin Transformer encoder + U-Net decoder로 구성된 간결한 Variational Autoencoder 구현체입니다. 이미지 재구성과 생성에 초점을 맞추어, Swin의 윈도우 어텐션과 U-Net의 스킵 커넥션을 결합했습니다.
 
@@ -23,8 +23,8 @@ pip install -r requirements.txt
 ```
 
 ## 데이터셋 준비
-- 단순 폴더 구조(클래스 폴더 없이 파일 나열)를 가정합니다.
-- `vXX/train`, `vXX/val` 경로 하위에 이미지(.jpg/.png/...) 파일을 배치하세요.
+- 단순 폴더 구조(클래스 폴더 없이 파일 나열)를 가정
+- `vXX/train`, `vXX/val` 경로 하위에 이미지(.jpg/.png/...) 
 
 예시:
 ```text
@@ -38,7 +38,7 @@ v61/
 ```
 
 ## 학습
-`train_vae_swin_unet.py`의 경로/하이퍼파라미터를 확인하세요.
+`train_vae_swin_unet.py`의 경로/하이퍼파라미터
 ```bash
 python train_vae_swin_unet.py
 ```
@@ -57,8 +57,5 @@ python generate_single_image.py \
 ```
 
 학습 중/후 검증 결과 시각화:
-- `val_visualizer.py`를 통해 학습/검증 손실 비교 그래프와 러닝 커브를 저장합니다.
-- `train_vae_swin_unet.py`에서 `ValidationVisualizer`가 자동으로 결과를 저장합니다(`validation_plots/`).
-
-## 라이선스
-MIT
+- `val_visualizer.py`를 통해 학습/검증 손실 비교 그래프와 러닝 커브를 저장
+- `train_vae_swin_unet.py`에서 `ValidationVisualizer`가 자동으로 결과를 저장(`validation_plots/`).

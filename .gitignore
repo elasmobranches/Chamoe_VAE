@@ -1,0 +1,25 @@
+# Byte-Scale SwinUNet-VAE
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.DS_Store
+.env
+.venv
+.cache/
+outputs/
+plots/
+saved_models/
+*.pth
+*.pt
+*.png
+*.jpg
+*.jpeg
+*.bmp
+*.tiff
+*.tif
+
+# IDE
+.vscode/
+.idea/
